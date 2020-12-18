@@ -1,0 +1,426 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Indie Flower', cursive;
+}
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: hsla(261, 58%, 71%, 0.918);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* --------------- */
+/*      Header     */
+/* --------------- */
+header{
+    width: 100%;
+    height: 600px;
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(335, 59%, 80%, 0.61), hsla(256, 35%, 47%, 0.699)), url(/img/sobremi/perfil.jpeg);/* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(335, 59%, 80%, 0.61), hsla(256, 35%, 47%, 0.699)), url(/img/sobremi/perfil.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+nav {
+    text-align: right;
+    padding: 30px  50px 0 0;
+}
+nav > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+nav > a:hover{
+    text-decoration: underline;
+   
+}
+header .textos-header{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 50px;
+    color:white;
+
+}
+.textos-header p{
+    font-size: 15px;
+    color:white;
+
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* --------------- */
+/*      Sobre mi   */
+/* --------------- */
+.contenedor-sobre-mi{
+ display:flex;
+ justify-content: space-evenly;
+
+}
+.imagen-sobre-mi{
+    width: 48%;
+}
+.contenedor-sobre-mi .contenido-textos{
+    width: 48%;
+
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+
+}
+.contenido-textos h3 span{
+    background: #9f63c2a2;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px black(0, 0, 0, .5);
+    margin-right:5px;
+}
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+/* --------------- */
+/*      Portafolio */
+/* --------------- */
+.portafolio{
+    background:white
+}
+
+.galeria-portafolio{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-portafolio{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px purple(0, 0, 0, .5) ;
+}
+.imagen-portafolio > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(300, 100%, 25%, 0.452);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.hover-galeria img{
+    color: white;
+}
+
+.imagen-portafolio:hover .hover-galeria{
+    transform: scale(1);
+
+}
+.texto-hover1{
+    color: white;
+    font-size: 30px;
+
+}
+
+/* --------------- */
+/*  Experiencia    */
+/* --------------- */
+
+.experiencia-contenedor{
+    
+display: flex;
+width: 600px;
+height: 650px;
+float: left;
+font-size: 15px;
+margin: auto;
+padding: 15px;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+
+}
+.educacion-contenedor{
+    
+    display: flex;
+    width: 600px;
+    height: 650px;
+    float: left;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+
+/* --------------- */
+/*   servicios     */
+/* --------------- */
+
+.imagen-servicios{
+    display: block;
+    width: 600px;
+    height: 650px;
+    float: left;
+    
+}
+.contenedor-descripcion-servicios{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    
+    
+
+}
+/* --------------- */
+/*     contacto    */
+/* --------------- */
+#contact_form {
+	margin-top: 20px;
+}
+#contact_form input[type=text], #contact_form textarea, #contact_form input[type=email], #search {
+	padding: 10px;
+	margin-bottom: 30px;
+	color: #fff;
+	border: solid 2px rgba(0, 0, 0, .3);
+	background: none;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	height: auto;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+.de_light #contact_form input[type=text], .de_light #contact_form textarea, .de_light #contact_form input[type=email], .de_light #search {
+	background:none;
+	border:solid 3px rgba(255,255,255,.1);
+}
+
+.de_light #contact_form.s1 input[type=text], .de_light #contact_form.s1 textarea, .de_light #contact_form.s1 input[type=email], .de_light #search {
+	background:none;
+	border:solid 2px rgba(0,0,0,.1);
+	color:#555555;
+}
+
+
+.de_light #contact_form.s2 input[type=text], .de_light #contact_form.s2 textarea, .de_light #contact_form.s2 input[type=email], .de_light #search {
+	background:#eee;
+	color:#333;
+	border:none;
+}
+
+.de_light #contact_form.s3 input[type=text], .de_light #contact_form.s3 textarea, .de_light #contact_form.s3 input[type=email], .de_light #search {
+	font-size:16px;
+	color:#333;
+	margin-bottom:10px;
+	background:none;
+	border:solid 1px rgba(0,0,0,.2);
+	color:#555555;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.de_light #contact_form.s3 textarea {
+	height: 90px;
+}
+
+#contact_form input[placeholder], #contact_form textarea[placeholder] {
+	color: #eee;
+}
+#contact_form textarea {
+	height: 195px;
+}
+#contact_form.s2 textarea {
+	height: 180px;
+}
+.contenedor-contacto-form{
+    display: flex;
+    width: 600px;
+    height: 650px;
+    float: left;
+    
+
+}
+.grid-contenedores{
+    display: grid;
+    grid-template-columns: 550px 550px;
+    grid-template-rows: auto;
+    background-color: rgb (134, 211, 255);
+    justify-content: space-around;
+    text-align: center;
+}
+@media screen and (max-width:1000px) {
+    .grid-contenedores {
+        width: 100%;
+        grid-template-columns: 90%;
+        grid-template-rows: 160px 500px 160px 500px;
+    }
+}
+.contenedor-redes-sociales{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+}
+@media screen and (max-width:1000px) {
+    .contenedor-redes-sociales{
+        width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+
+    }
+}
+.contenedor-contacto-form{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+@media screen and (max-width:1000px) {
+    .contenedor-contacto-form{
+        width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+    }
+}
+
+/* --------------- */
+/*      Footer     */
+/* --------------- */
+#fotos-mano-saludando{
+    width: 100px;
+    height: 100px;
+
+    animation-name: animacion-mano;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction:normal;
+    animation-timing-function: linear;
+
+}
+#fotos-mano:hover{
+    animation-play-state: paused;
+}
+
+@keyframes animacion-mano{
+    0%{ width: 450px;
+        height: 450px;
+        background: url(/img/iconos/1-removebg-preview.png)
+    }
+
+
+  30%{
+    width: 450px;
+    height: 450px;
+      background: url(/img/iconos/2-removebg-preview.png)
+  }
+  
+  60%{
+    width: 450px;
+    height: 450px;
+      background: url(/img/iconos/3-removebg-preview.png)
+  
+  }
+  100%{
+    width: 450px;
+    height: 450px;
+      background: url(/img/iconos/4-removebg-preview.png)
+  }
+}
+
+
+.grid-contenedor-2{
+    display: grid;
+    grid-template-columns: 550px 550px;
+    grid-template-rows: auto;
+    background-color: rgb (134, 211, 255);
+    justify-content: space-around;
+    text-align: center;
+
+}
+@media screen and (max-width:1000px) {
+    .grid-contenedores {
+        width: 100%;
+        grid-template-columns: 90%;
+        grid-template-rows: 160px 500px 160px 500px;
+    }
+}
+.datos-de-contacto{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    
+
+}
+@media screen and (max-width:1000px) {
+    .datos-de-contacto{
+        width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        
+
+    }
+}
+#fotos-mano-saludando{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+@media screen and (max-width:1000px) {
+    #fotos-mano-saludando{
+        width: 90%;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+    }
+}
